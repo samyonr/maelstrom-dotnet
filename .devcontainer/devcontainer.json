@@ -1,0 +1,25 @@
+{
+    "name": "Maelstrom .NET",
+
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "JetBrains.resharper-code",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    },
+
+    "portsAttributes": {
+        "8080": {
+            "label": "Maelstrom results",
+            "onAutoForward": "notify"
+        }
+    },
+	
+	"postStartCommand": "git config --global core.autocrlf input"
+}
