@@ -55,3 +55,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Maelstrom and Jepsen
+*.log
+*.fressian
+*.jepsen
+store/
